@@ -1,0 +1,67 @@
+.top{
+    align-items: center;
+    box-sizing: border-box;
+    background-color:#fff;
+    background-clip: content-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    color: #fff;
+    display:flex;
+    position: relative;
+    flex-direction: row;
+    height: 64px;
+    width: 100%;
+    padding: 0px;
+    box-shadow: 0 1px 3px rgba(26,26,26,.5);
+    white-space: nowrap;
+    font-family: Roboto,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+
+
+.mainpic{
+    padding-left: 12px;
+}
+#topsearch{
+    height: 50%;
+    max-width: 160px;
+    width: 120px;
+    border-radius: 100px;
+    border-style: none;
+    padding-left: 10px;
+    background-color: rgb(233,233,233);
+    outline: 0;
+}
+.toplink{
+    color: #232323;
+    padding: 0 16px;
+    cursor: pointer;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration-line: none;
+    list-style-position: inside;
+    
+}
+.usericoncontainer{
+    width: 50%;
+    text-align: right;
+    float: right;
+    padding-right: 20px;
+
+}
+#ntcicon {
+    height: 48px;
+    width: 48px;
+}
+#msgicon{
+    height: 48px;
+    width: 48px;
+}
+#usrlogo{
+    height: 48px;
+    width: 48px;
+}
+.mainpic{
+    height: 60px;
+    width: 60px;
+}
