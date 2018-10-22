@@ -1,5 +1,15 @@
 # Initsite
 
+##第三方库
+###Swiper
+Swiper的安装参考
+Swiper3：
+https://poychang.github.io/integrate-swiper-into-angular/ https://stackblitz.com/edit/angular-with-swiper
+Swiper4：
+另加在使用Swiper的组件中加入
+`import Swiper from 'swiper';`
+Swiper3到Swiper4，api有很大的变化，详请查询Swiper API
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.
 
 ## Development server

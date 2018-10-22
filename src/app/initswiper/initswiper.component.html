@@ -1,0 +1,12 @@
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" *ngFor="let item of slides">
+          <a href={{item}}>
+            <img [src]="item" alt="" >
+          </a>
+        </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
