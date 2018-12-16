@@ -1,6 +1,10 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
+import {GetswiperitemsService} from '../getswiperitems.service';
 
 import Swiper from 'swiper';
+import { from } from 'rxjs';
+
+import{ swiperitemdetails } from '../mock-swipers'
 
 @Component({
   selector: 'app-initswiper',
@@ -11,15 +15,22 @@ export class InitswiperComponent implements OnInit, AfterViewInit {
 
   name = 'Angular with Swiper';
   mySwiper: Swiper;
-  slides = [
-    'https://via.placeholder.com/300x200/FF5733/ffffff',
-    'https://via.placeholder.com/300x200/C70039/ffffff',
-    'https://via.placeholder.com/300x200/900C3F/ffffff'
-  ];
+  inislides : swiperitemdetails[];
+  slides=[];
+  clickurls=[];
+  constructor(private getswiperitemsService: GetswiperitemsService) { }
 
-  constructor() { }
+  getSwiperdetails():void{
+    this.getswiperitemsService.getSwiperItems()
+        .subscribe(items => this.inislides=items);
+    for(let s of this.inislides){
+      this.slides.push(s.imgurl);
+      this.clickurls.push(s.linkurl);
+    }
+  }
 
   ngOnInit() {
+    this.getSwiperdetails();
   }
 
   ngAfterViewInit() {

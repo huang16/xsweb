@@ -1,9 +1,9 @@
 <!-- Swiper -->
 <div class="swiper-container">
     <div class="swiper-wrapper">
-        <div class="swiper-slide" *ngFor="let item of slides">
-          <a href={{item}}>
-            <img [src]="item" alt="" >
+        <div class="swiper-slide" *ngFor="let item of inislides">
+          <a href={{item.linkurl}}>
+            <img src={{item.imgurl}} alt="" >
           </a>
         </div>
     </div>

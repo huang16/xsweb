@@ -1,0 +1,11 @@
+<div class="normalstory" *ngFor= "let nmlstory of nmlstories">
+  <h3>{{nmlstory.title}}</h3>
+  <p>{{nmlstory.summary}}</p>
+  <div class="nmsty-item-hots">
+    <img class="mic-user-icon" src={{nmlstory.authicon}}>
+    <p>阅读 {{nmlstory.readnum}} 
+      收藏 {{nmlstory.marknum}}  
+      赞 {{nmlstory.supportnum}}  
+      分享 {{nmlstory.sharenum}}</p>
+  </div>
+</div>

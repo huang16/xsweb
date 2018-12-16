@@ -10,7 +10,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api'
 import { InMemoryDataService } from './in-memory-data.service';
 import { IndexpageComponent } from './indexpage/indexpage.component';
-import { InitswiperComponent } from './initswiper/initswiper.component'
+import { InitswiperComponent } from './initswiper/initswiper.component';
+import { NmlStoryContainerComponent } from './nml-story-container/nml-story-container.component';
+import { MarkmicroComponent } from './markmicro/markmicro.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { InitswiperComponent } from './initswiper/initswiper.component'
     TopbarComponent,
     BottomlistComponent,
     IndexpageComponent,
-    InitswiperComponent
+    InitswiperComponent,
+    NmlStoryContainerComponent,
+    MarkmicroComponent
   ],
   imports: [
     BrowserModule,
